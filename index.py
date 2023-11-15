@@ -12,8 +12,8 @@ def index():
 def gen_random():
     with open('quotes.txt', 'r', encoding = 'utf-8') as f:
         quotes = f.readlines()
-    text = ''
-    while text == '':
+    text = '/n'
+    while text == '/n' or len(text) < 3:
         text = random.choice(quotes)
     return render_template('index.html', word = text)
 
