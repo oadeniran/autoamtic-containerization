@@ -6,7 +6,7 @@ COPY requirements.txt requirements.txt
 
 RUN pip install --no-cache -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 8080
 
 COPY . .
 
