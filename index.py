@@ -18,7 +18,7 @@ def gen_random():
     return render_template('index.html', word = text)
 
 if '__main__' == __name__:
-    app.run(port=8080)
+    app.run(port=8080, host = "0.0.0.0")
     
 
 

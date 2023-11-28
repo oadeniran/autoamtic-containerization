@@ -15,4 +15,4 @@ jobs:
               with:
                 app-name: autodeploy-testing
                 publish-profile:  ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-                images: index.docker.io/v1/oadeniran/quote-gen:latest2
+                images: index.docker.io/oadeniran/quote-gen:latest2
